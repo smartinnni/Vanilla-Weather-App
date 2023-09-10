@@ -51,11 +51,14 @@ li {
     font-size: 64px;
     font-weight: 400;
     line-height: 1;
+    position: relative;
+    top: 15px;
+    
 }
 
 .weather-temperature .units {
     position: relative;
     font-size: 16px;
-    top: -34px;
+    top: -22px;
 
 }
