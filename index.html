@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script https://api.shecodes.io/weather/v1/current?query={query}&key={key}></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <link rel="stylesheet" href="src/style.css">
     <title>Vanilla Weather App</title>
 </head>
@@ -12,14 +14,14 @@
         <div class="weather-app-wrapper">
             <div class="weather-app">
                 <div class="overview">
-        <h1>
-            New York
+        <h1 id="city">
+            
         </h1>
         <ul>
             <li>
                 Friday 05:00
             </li>
-            <li>
+            <li id="description">
                 Clear
             </li>
         </ul>
@@ -35,13 +37,10 @@
         <div class="div col-6">
             <ul>
                 <li>
-                    Precipitation: 0%
+                    Humiditiy: <span id="humidity"></span>%
                 </li>
                 <li>
-                    Humiditiy: 73%
-                </li>
-                <li>
-                    Wind: 2 km/h
+                    Wind: <span id="wind"></span> km/h
                 </li>
             </ul>
         </div>
